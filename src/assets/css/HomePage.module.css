@@ -1,0 +1,185 @@
+.welcome-section {
+  margin: auto 1rem;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 200px;
+  max-width: 100%;
+}
+
+.logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.greetings h6 span {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.cases-section {
+  margin: 2rem 1rem;
+}
+
+.cases-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cases-heading a {
+  color: var(--secondary-color);
+}
+
+.cases-heading h4 {
+  font-weight: bold;
+}
+
+.cases-card {
+  display: flex;
+  max-width: 100%;
+  width: 232px;
+  padding: 16px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--light-primary);
+  background: #fff;
+  height: 100%;
+}
+
+.cases-user .username {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  /* font-size: 1rem; */
+  margin-bottom: auto;
+}
+
+.cases-desc p {
+  font-weight: bold;
+}
+
+.btn-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  /* border: 1px solid var(--secondary-color); */
+  /* box-shadow: 0px 1px 2px -1px rgba(16, 24, 40, 0.1),
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1); */
+  padding: 8px 6px;
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.btn-support::before {
+  content: "";
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.1251 19.972C13.9031 20.136 13.6621 20.272 13.3971 20.342C12.6511 20.542 11.8361 20.244 11.1241 20.044C6.35105 18.701 3.15405 16.598 2.23705 13.46C1.50505 10.954 2.20905 8.44396 3.75705 6.88396C5.19105 5.43896 7.31705 4.85296 9.49805 5.79196C10.9181 3.88796 13.0531 3.33196 15.0171 3.86696C17.1371 4.44396 19.0011 6.26596 19.6201 8.80196C19.7414 9.29929 19.8024 9.80563 19.8031 10.321C20.0591 10.4523 20.2991 10.6123 20.5231 10.801C21.6801 11.78 22.298 13.443 21.9531 15.172C21.5131 17.378 19.4681 18.927 16.5431 20.033C16.0421 20.223 15.4941 20.458 14.9471 20.362C14.6431 20.308 14.3711 20.152 14.1251 19.972ZM4.15705 12.899C3.62205 11.066 4.16005 9.31796 5.17705 8.29296C6.15305 7.30896 7.60005 6.94296 9.20005 7.87896C9.75905 8.20596 10.4801 8.01196 10.8001 7.45096C11.7181 5.83996 13.1541 5.43296 14.4911 5.79696C15.8851 6.17696 17.2251 7.42096 17.6771 9.27596C17.7324 9.49863 17.7691 9.72696 17.7871 9.96096C17.4207 10.0078 17.0634 10.1093 16.7271 10.262C15.6531 9.21496 14.2311 9.00896 12.9771 9.47096C11.5551 9.99396 10.4051 11.346 10.1371 13.089C9.86405 14.874 10.7071 16.614 12.2761 18.287C12.0781 18.237 11.8731 18.177 11.6661 18.119C7.03505 16.816 4.76605 14.984 4.15705 12.899ZM12.1151 13.392C12.2751 12.342 12.9541 11.611 13.6681 11.347C14.3281 11.105 15.0611 11.232 15.6181 12.037C15.7011 12.1569 15.8071 12.2592 15.9299 12.3379C16.0527 12.4167 16.19 12.4703 16.3336 12.4957C16.4773 12.521 16.6246 12.5177 16.7669 12.4858C16.9093 12.454 17.0439 12.3942 17.1631 12.31C17.9631 11.743 18.6951 11.875 19.2311 12.328C19.8131 12.82 20.1991 13.74 19.9911 14.781C19.7661 15.911 18.6231 17.109 15.8361 18.162C15.6591 18.229 15.4831 18.301 15.3011 18.354C15.1481 18.241 15.0071 18.114 14.8631 17.991C12.6051 16.048 11.9401 14.531 12.1151 13.391V13.392Z' fill='%23BA324F'/%3E%3C/svg%3E");
+}
+
+.emergency-section {
+  margin: 3rem 1rem;
+}
+
+.emergency-section h4 {
+  font-weight: bolder;
+}
+
+.emergency-heading {
+  margin-bottom: 2rem;
+}
+
+.emergency-card {
+  display: flex;
+  width: max-content;
+  height: auto;
+  padding: 12px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #f8ebed;
+}
+
+.success-message {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.success-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .emergency-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+} */
+
+.info-telp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.info-telp h5 {
+  font-weight: bolder;
+}
+
+.info-title p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.tips-section {
+  margin: 1rem 1rem;
+}
+.tips-title {
+  margin: 2rem auto;
+}
+
+.tips-title h4 {
+  font-weight: bolder;
+}
+
+.tips-card {
+  width: 210px;
+  height: max-content;
+  max-width: 90%;
+}
+
+.tips-card .image {
+  width: 100%;
+}
+
+.tips-card .image img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tips-card .title {
+  color: var(--secondary-color);
+  margin: 1rem auto;
+}
+
+.content-home {
+  padding-bottom: 5rem;
+  background-color: white;
+}
+
+/* Custom css fro Slick */

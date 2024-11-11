@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 14px !important;
+  background-color: var(--light-secondary);
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+.wrapper-mobile {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0;
+  background-color: var(--white);
+}
+
+/* Responsif untuk perangkat dengan lebar maksimum 576px (seperti ponsel kecil) */
+@media (max-width: 576px) {
+  .wrapper-mobile {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .navbar {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .wrapper-mobile {
+    padding: 0 20px;
+  }
+}
+/* Responsive */

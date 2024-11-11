@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #04395e;
+  --secondary-color: #ba324f;
+  --light-primary: #f2f5f7;
+  --light-secondary: #f8ebed;
+  --dark-primary: #032b47;
+  --dark-secondary: #8c263b;
+  --light-grey: #8c8c8c;
+  --dark-black: #000000;
+  --white: #ffffff;
+}
+
+.login-content {
+  background-color: var(--light-grey);
+  padding-top: 5rem; 
+}
+
+.p {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 12px;
+  text-align: center;
+}
+
+.small {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.small-b {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 20px;
+  margin: 25px 0 10px;
+  font-weight: 600;
+}
+
+.header-text .desc {
+  color: var(--secondary-color);
+}
+
+.form-control {
+  background-color: var(--light-primary);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.lg-btn-primary {
+  display: inline-flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background: var(--dark-primary);
+  color: var(--white);
+  border: none;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+::placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+  color: var(--light-grey);
+}
+
+
+#error-message {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#error-message p {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.hero-img .img-1 {
+  z-index: 20;
+}
+
+
+/* ------------------------Specific Register------------------------ */
+
+label {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.inline-form {
+  display: flex;
+  gap: 16px;
+}
+
+.register-content {
+  background-color: white;
+  padding-top: 5rem;
+}
+
+.logo{
+  margin-top: 1rem;
+}

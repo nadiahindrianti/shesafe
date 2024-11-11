@@ -1,0 +1,353 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #04395e;
+  --secondary-color: #ba324f;
+  --light-primary: #d9e1e7;
+  --light-secondary: #f8ebed;
+  --dark-primary: #032b47;
+  --dark-secondary: #8c263b;
+  --light-grey: #8c8c8c;
+  --dark-black: #000000;
+  --white: #ffffff;
+}
+
+/* .wrapper-mobile {
+  width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0px 0px;
+  background-color: var(--white);
+} */
+
+/* Custom css Slick */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  color: #ba3451 !important;
+}
+
+.slider-container .slick-list {
+  margin: 0 -5px;
+}
+
+.slider-container .slick-slide {
+  padding: 0 5px;
+}
+
+/* custom texteditor */
+/* Menghilangkan semua efek border di toolbar dan editor */
+.custom-quill-editor .ql-container {
+  border: none !important;
+  outline: none !important;
+  min-height: 200px;
+}
+
+.custom-quill-editor .ql-toolbar {
+  border: none !important;
+  padding: 8px 10px;
+  outline: none !important;
+}
+
+/* Menghilangkan efek border pada toolbar tombol saat fokus */
+.custom-quill-editor .ql-toolbar .ql-picker-label,
+.custom-quill-editor .ql-toolbar button {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Fokus editor khusus dengan warna pink tanpa efek fokus lain */
+.custom-quill-editor .ql-editor {
+  min-height: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Hanya warna pink pada fokus editor */
+.custom-quill-editor .ql-editor:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ba324f !important;
+  border-radius: 10px;
+}
+
+/* Hover toolbar dengan warna pink */
+.custom-quill-editor .ql-toolbar .ql-picker-label:hover,
+.custom-quill-editor .ql-toolbar button:hover {
+  color: #ba324f !important;
+}
+
+/* style navigation landing page */
+
+.navigation {
+  background-size: cover;
+  max-width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  padding: 12px 12px;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 420px;
+  margin: 0.5rem 0.5rem;
+  gap: 8px;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar .navbar-links ul li a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.navbar-links ul li {
+  list-style: none;
+  padding: 12px 15px;
+  color: black;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navbar-links ul li a.active {
+  color: var(--primary-color) !important;
+}
+
+.logo {
+  width: 200px;
+  max-width: 100%;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-family: "Rancho", cursive;
+  font-weight: 1000;
+  margin: 0;
+}
+.logo img {
+  max-width: 100%;
+  width: 30%;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--light--primary);
+  border-radius: 2px;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.navbar .navbar-links {
+  overflow: hidden;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 105%;
+  width: 100%;
+  max-height: 0px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: max-height 0.5s;
+}
+
+.navbar-links ul {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.navbar-links li {
+  text-align: center;
+  margin: 8px auto;
+}
+
+.toggle-button {
+  display: flex;
+}
+.navbar {
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-links.active {
+  max-height: 400px;
+}
+
+/* style navigation landing page */
+
+/* style button */
+.sm-btn-primary {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sm-btn-secondary {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.lg-btn-primary {
+  display: inline-flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background: #04395e;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.lg-btn-secondary {
+  display: inline-flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border-radius: 10px;
+  background: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.sm-btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.sm-btn-secondary a {
+  text-decoration: none;
+  color: white;
+}
+
+.lg-btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.lg-btn-secondary a {
+  text-decoration: none;
+  color: white;
+}
+
+.lg-btn-primary:hover {
+  color: white;
+}
+
+.lg-btn-secondary:hover {
+  color: white;
+}
+
+.sm-btn-primary:hover {
+  color: white;
+}
+
+.sm-btn-secondary:hover {
+  color: white;
+}
+
+/* style button */
+
+/* footer */
+.footer {
+  /* margin-top: 3rem; */
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 24px 24px;
+}
+
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto !important;
+}
+
+/* Uncomment if using animations
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+*/
+
+/* .card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
