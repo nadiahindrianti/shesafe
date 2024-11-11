@@ -5,21 +5,40 @@ axios.defaults.withCredentials = true;
 
 export const fetchCommunity = createAsyncThunk(
   "community/fetchCommunity",
-  async ({ category, page, perPage, c }) => {
-    const response = await axios.get(`${API_BASE_URL}/community`, {
-      params: {
-        category,
-        page,
-        perPage,
-      },
-      withCredentials: true, // Tambahkan ini jika perlu cookie
-    });
-    return {
-      community: response.data.data,
-      pagination: response.data.pagination,
-    };
+  async ({ category, page, perPage, c }, { rejectWithValue }) => {
+    try {
+      const token = localStorage.getItem("authToken");
+
+      if (!token) {
+        // Jika token tidak ada, kembalikan error khusus
+        throw new Error("Token tidak ditemukan, silakan login kembali.");
+      }
+
+      const response = await axios.get(`${API_BASE_URL}/community`, {
+        params: {
+          category,
+          page,
+          perPage,
+        },
+        headers: {
+          Authorization: `Bearer ${token}`, 
+        },
+        withCredentials: true,
+      });
+
+      return {
+        community: response.data.data,
+        pagination: response.data.pagination,
+      };
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        return rejectWithValue("Unauthorized: Token tidak valid atau kedaluwarsa.");
+      }
+      return rejectWithValue(error.message);
+    }
   }
 );
+
 
 
 export const fetchSupport = createAsyncThunk(
