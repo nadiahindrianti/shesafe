@@ -6,6 +6,9 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 // Thunk untuk mendapatkan data pendidikan (edu)
 export const fetchEdu = createAsyncThunk("edu/fetchEdu", async () => {
   const response = await axios.get(`${API_BASE_URL}/education/`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
     withCredentials: true,
   });
   return response.data.data;
