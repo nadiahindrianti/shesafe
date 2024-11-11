@@ -6,21 +6,25 @@ axios.defaults.withCredentials = true;
 export const fetchCommunity = createAsyncThunk(
   "community/fetchCommunity",
   async ({ category, page, perPage, c }) => {
+    const token = localStorage.getItem("authToken"); 
     const response = await axios.get(`${API_BASE_URL}/community`, {
       params: {
         category,
         page,
         perPage,
       },
+      headers: {
+        Authorization: `Bearer ${token}`, // Sertakan token di header
+      },
+      withCredentials: true, // Tambahkan ini jika perlu cookie
     });
-    // console.log("API Response:", response.data.data);
-    // console.log("API Pagination:", response.data.pagination);
     return {
       community: response.data.data,
       pagination: response.data.pagination,
     };
   }
 );
+
 
 export const fetchSupport = createAsyncThunk(
   "community/fetchSupport",
