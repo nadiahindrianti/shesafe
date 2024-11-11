@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://dying-evy-rnvitas-ef43d5e9.koyeb.app/",
+        target: "https://characteristic-verna-nbootcamp-9a822aaf.koyeb.app/",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
