@@ -132,4 +132,3 @@ const userSlice = createSlice({
 });
 export const { setLoginStatus } = userSlice.actions;
 export default userSlice.reducer;
-export default API_BASE_URL;
